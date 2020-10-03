@@ -16,8 +16,8 @@ def get_price():
     soup = BeautifulSoup(page.content, "html.parser")
 
     # Getting the Title and Price of the Product
-    title = soup.find("span", class_="_35KyD6").get_text().strip()
-    print(title)
+    satwik= soup.find("span", class_="_35KyD6").get_text().strip()
+    print(satwik)
     price = soup.find("div", class_="_1vC4OE _3qQ9m1").get_text()
     print(price)
 
